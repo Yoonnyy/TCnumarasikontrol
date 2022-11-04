@@ -1,1 +1,4 @@
-console.log("uwu");
+(() => {
+	const form = document.querySelector("#form");
+	
+})()
