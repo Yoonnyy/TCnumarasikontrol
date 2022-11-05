@@ -3,7 +3,7 @@ const searchID = require("../utils/searchID")
 module.exports = async (req, res) => {
 	try {
 		let { id, name, surname, birthYear, birthMonth, birthDay } = req.body;
-
+		
 		// check empty/null/undefined values
 		if (
 			!id ||
@@ -52,7 +52,7 @@ module.exports = async (req, res) => {
 				.json({ message: resp.req.response.statusText });
 		}
 
-		res.status(200).json(resp.check);
+		res.status(200).json({ check: resp.check});
 	} catch (err) {
 		console.error(err);
 	}
