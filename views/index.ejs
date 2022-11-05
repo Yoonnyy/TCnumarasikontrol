@@ -5,13 +5,32 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
 		<form method="post" id="form">
-			<input type="text" id="id" name="id" placeholder="Kimlik numarasi" />
-			<input type="text" id="name" name="name" placeholder="Ad" />
-			<input type="text" id="surname" name="surname" placeholder="Soyad" />
-			<input type="date" name="date" id="date">
+			<input
+				type="number"
+				id="id"
+				name="id"
+				placeholder="Kimlik numarasi"
+				required
+			/>
+			<input
+				type="text"
+				id="name"
+				name="name"
+				placeholder="Ad"
+				required
+			/>
+			<input
+				type="text"
+				id="surname"
+				name="surname"
+				placeholder="Soyad"
+				required
+			/>
+			<input type="date" name="date" id="date" required />
 			<input type="submit" value="Gonder" />
 		</form>
 		<script src="index.js" defer></script>
