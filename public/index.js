@@ -6,7 +6,7 @@
 		e.preventDefault();
 	
 		// split data to YY[0] MM[1] DD[2] 
-		const splitDate = date.split("-");
+		const splitDate = date.value.split("-");
 		
 		// make the request
 		const request = await axios.post("/search", {
