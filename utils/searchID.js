@@ -6,7 +6,7 @@ let tcURL = "https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx";
 
 async function searchID(data) {
 	try {
-		// determine if id is foreign
+		// determine if id is foreign (in Turkey foreign ids start with 99)
 		data.foreign = data.id.toString().startsWith("99");
 		
 		const res = await axios.post(
